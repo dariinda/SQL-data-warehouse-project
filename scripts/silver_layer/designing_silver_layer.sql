@@ -9,6 +9,11 @@ Creates table for both :
 
 what i did
 - We can copy this structure from the bronze layer as we have to use the same but with transformations
+
+small change here :
+- we have split the prd_key columns into 2 columns for simplicity 
+
+NOTE : UPDATE THE INFO HERE IN CREATION OF TABLE crm_prd_info
 */
 
 
@@ -27,12 +32,12 @@ CREATE TABLE silver.crm_cust_info(
 
 GO 
 
-
 IF OBJECT_ID ('silver.crm_prd_info','U') IS NOT NULL
 	DROP TABLE silver.crm_prd_info;
 CREATE TABLE silver.crm_prd_info(
 	prd_id INT,
-	prd_key VARCHAR(50),
+	cat_id VARCHAR(50), -- Splitted column from prd_key
+	prd_key VARCHAR(50), -- Splitted column from prd_key
 	prd_nm VARCHAR(50),
 	prd_cost INT, 
 	prd_line VARCHAR(50),
