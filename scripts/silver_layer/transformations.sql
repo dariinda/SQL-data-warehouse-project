@@ -4,6 +4,7 @@
 ----------------------------------------------------------------------------------
 This scripts deal with transformation of all the tables of bronze layer .
 After transforming we can insert the data to the silver layer.
+
 In silver layer we can also use the tranformations to check if it is working fine.
 
 
