@@ -56,14 +56,13 @@ CREATE TABLE silver.crm_sales_details(
 	sls_ord_num VARCHAR(50),
 	sls_prd_key VARCHAR(50),
 	sls_cust_id INT,
-	sls_order_dt INT,
-	sls_ship_dt INT,
-	sls_due_dt INT,
+	sls_order_dt DATE,    -- CHANGED THE DATATYPE FROM INT TO DATE (BRONZE LAYER HAS INT FORMAT)
+	sls_ship_dt DATE,     -- CHANGED THE DATATYPE FROM INT TO DATE (BRONZE LAYER HAS INT FORMAT)
+	sls_due_dt DATE,      -- CHANGED THE DATATYPE FROM INT TO DATE (BRONZE LAYER HAS INT FORMAT)
 	sls_sales INT,
 	sls_quantity INT,
 	sls_price INT,
 	dwh_create_date DATETIME2 DEFAULT GETDATE()
-
 )
 
 GO
