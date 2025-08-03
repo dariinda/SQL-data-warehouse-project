@@ -10,6 +10,7 @@ Data integration:
 
 Data flow diagram:
 
-<img width="3407" height="1074" alt="diagram-export-8-3-2025-8_20_19-PM" src="https://github.com/user-attachments/assets/c84bd633-efb3-46dc-ae9d-97a2bdad6946" />
+<img width="1461" height="880" alt="diagram-export-8-3-2025-8_21_51-PM" src="https://github.com/user-attachments/assets/f5d80ee3-eba3-4877-b37c-2c51c78f2ffa" />
+
 
 
